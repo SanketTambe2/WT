@@ -1,0 +1,75 @@
+#practical 5
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app="Mymodule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="angular.min.js"></script>
+</head>
+<body ng-controller="Mycontroller">
+    
+    <table>
+        <tr>
+            <th>TaskNo</th>
+            <th>TaskName</th>
+        </tr>
+        <tr ng-repeat="obj in task">
+            <td ng-repeat="(key,value) in obj">{{value}}</td>
+             <td><input type="button" value="Delete" ng-click="Delete(obj.TaskNo)"></td>
+             <td><input type="button" value="Update" ng-click="Update(obj.TaskNo)"></td>
+        </tr>
+        
+    </table>
+
+    Enter your new task number:
+    <input type="text" ng-model="num">
+    Enter your new task name:
+    <input type="text" ng-model="name">
+    <script src="ass-5.js"></script>
+    <input type="button" value="Add" ng-click="add()">
+</body>
+</html>
+
+
+
+#ang js
+
+
+let m=angular.module("Mymodule",[])
+let c=m.controller("Mycontroller",function($scope) {
+    $scope.task=[{TaskNo:1,TaskName:"Wake up"},{TaskNo:2,TaskName:"go to gym"}]
+
+    $scope.add=function(){
+       $scope.task.push({
+        TaskNo:$scope.num,
+        TaskName:$scope.name
+    });
+    }
+
+    $scope.Delete=function(ele){
+        $scope.task=$scope.task.filter(function(o)
+        {
+            return o.TaskNo!=ele;
+            alert(ele)
+            alert(o.Taskno)
+        });
+     }
+
+     $scope.Update=function(ele){
+        let t_num=prompt("Enter your task number=");
+        let t_name=prompt("Enter your task name=");
+ 
+         $scope.task.forEach(function(element){
+                
+             if(element.TaskNo==ele)
+             {
+                 element.TaskNo=t_num;
+                 element.TaskName=t_name;
+             }
+             });
+    
+                     }
+         });
