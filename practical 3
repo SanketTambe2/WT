@@ -1,0 +1,107 @@
+
+# practical 3
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sanjivani COE</title>
+	<!-- <link rel="stylesheet"  href="./style.css"> -->
+<body>	
+	<tr>
+		<td><img src="1.png"></td>
+	</tr>
+	<tr>
+		<td><img src="download.png" width="68%"></td>
+	</tr>
+	<img src="1.png">
+	<table id="header" border="1" width="100%" cellpadding="0" cellspacing="0" bgcolor="yellow">
+	<tr>
+		<td>
+			<table border="1" width="85%" cellpadding="15" cellspacing="0" bgcolor="orange" align="center">
+				<tr>
+					<td>
+						<font face="arial" color="#000000" size="5">
+							Sanjivani COE
+						</font>
+					</td>
+					<td width="20%">
+						&nbsp;
+					</td>
+					<td>
+						<a href="college.html"><font face="arial" size="4"> </font>Home</a>
+				    </td>
+				    <td>
+						<a href="About.html"><font face="arial" size="4"> </font>About</a>
+				    </td>
+				    <td>
+						<a href="department.html"><font face="arial" size="4"> </font>Department</a>
+				    </td>
+				    <td>
+						<a href="gal.html"><font face="arial" size="4"> </font>Gallery</a>
+				    </td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+<div class="text">
+      <h1 id="College_name">Sanjivani College of Engineering</h1>
+      <h3>Sanjivani Group of Institutes has a place among the top 
+        and most-preferred educational institutes in the country. 
+        Since its inception in 1983 under the guidance of 
+         Late Shankarraoji G. Kolhe.</h3>
+    </div>
+</div>
+
+<div id="Home">
+  <div>
+    <h3>BRANCHES</h3>
+    <h1>Our Institutes</h1>
+    <p>Educational Institutes Run Under Sanjivani Group of Institutes</p>
+  </div>
+  <div>
+    <img src="https://sanjivani.org.in/wp-content/uploads/elementor/thumbs/COE-scaled-q77nd3phrzs93w3zkhuhlzfr0toak8rxjg4upmvy4o.jpg" alt="Sanjivani College of Engineering and MBA">
+    <h3>Sanjivani College of Engineering and MBA</h3>
+  </div>
+  <div>
+    <img src="https://sanjivani.org.in/wp-content/uploads/elementor/thumbs/kbp-q77ng2v3f3uxvfsc6s5yi8eaqr04xqlby6i7f6h2fc.png" alt="Sanjivani K.B.P. Polytechnic">
+    <h3>Sanjivani K.B.P. Polytechnic</h3>
+  </div>
+  
+  <div>
+    <img src="https://sanjivani.org.in/wp-content/uploads/elementor/thumbs/Vaijapur-q77o5k9kpeqsmurrdspu3sw6itedmbrcsb83t8otqg.jpg" alt="Sanjivani Academy Vaijapur">
+    <h3>Sanjivani Academy Vaijapur</h3>
+  </div>
+</div>
+
+<br><br><br>
+<div id="Contact_Us">
+ 
+  
+  <div>
+    <img src="https://sanjivani.org.in/wp-content/uploads/2023/05/open.png">
+    <p>contact@sanjivani.org.in</p>
+  </div>
+  <div>
+    <form action="msg.html">
+      <p>Name:-</p>
+      <input type="text">
+      <p>Email:-</p>
+      <input type="text">
+      <p>Phone:-</p>
+      <input type="number">
+      <p>Subject:-</p>
+      <input type="text">
+      <p>Message:-</p>
+      <textarea cols="50" rows="10"></textarea>
+      <input type="submit">
+    </form>
+  </div>
+  </div>
+</body>	
+</head>
+
+</html>
