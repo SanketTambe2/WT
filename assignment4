@@ -1,0 +1,50 @@
+<html>
+    <link rel="stylesheet" href="login.css"  >
+    <head>
+        <title>Login Form</title>
+        
+   
+    </head>
+    <body style="background-color: cornflowerblue;">
+
+        
+<h2 style="text-align: center; color:aliceblue;">WELCOME TO LOGIN !</h2>
+<form class="M" method="" onsubmit="return false">
+<label>ENTER USERNAME &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" placeholder="Enter your username" id="name" required></label></br></br>
+<label>ENTER PASSWORD &nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" placeholder="Enter your password" id="passwd" required></label></br></br>
+<input type="button" value="press" onclick="valid()" >
+<input type="reset" value="tap to reset">
+
+
+
+</form>
+
+<script>
+    
+    function valid() 
+    {
+        var name = document.getElementById("name").value;
+        var password = document.getElementById("passwd").value;
+
+        if(name.value =="" || passwd.value =="")
+        {
+            alert("FIELDS ARE EMPTY!");
+            return false;
+        }
+        else if(name.value == "pratik" || passwd.value =="1111")
+        {
+            alert("LOGIN SUCCESSFUL !!!");
+            document.write("Welcome user login is successfull");
+            true;
+        }
+        else
+        {
+            alert("LOGIN FAILED !!!");
+        }
+    }
+    
+    
+    </script>     
+
+    </body>
+</html>
