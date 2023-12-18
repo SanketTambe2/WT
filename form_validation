@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+
+        body {
+            background-color: rgb(149, 134, 136);
+
+
+        }
+       
+        div {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 50px;
+            background-color: rgb(174, 147, 80);
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        h1 {
+            color: black;
+            justify-content: center;
+
+
+        }
+    
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+    
+        input[type="submit"] {
+            background-color: #db3b1f;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    
+        
+    </style>
+    
+</head>
+<body>
+
+    <div>
+    <h1>Registration Form</h1>
+    <form onsubmit="return data()" > 
+        Name:              <input type="text" id="n1"><br><br>
+        Email Id:          <input type="text" id="n2"><br><br>
+        Contact:           <input type="text" id="n3"><br><br>
+        Password:          <input type="password" id="n4"><br><br>
+       <input type="submit" value="submit">
+    </form>
+    </div>
+
+    <script>
+        
+        function data(){
+
+            let a=document.getElementById("n1").value;
+            let b=document.getElementById("n2").value;
+            let c=document.getElementById("n3").value;
+            let d=document.getElementById("n4").value;
+
+            let nameRegex = /^[A-Za-z ]+$/;
+            let emailRegex = /^[a-z]+[@]+[a-z]+[.]+[a-z]+$/;
+          
+
+           if(a==""||b==""||c==""||d=="")
+           {
+            alert("All Fields are Mandatory");
+            return false;
+           }
+
+           else if(!nameRegex.test(a))
+           {
+            alert("Enter Valid Name");
+            return false;
+           
+           }
+
+           else if(!emailRegex.test(b))
+           {
+            alert("Enter Valid Email");
+            return false;
+           }
+
+           else if(c.length<10||c.length>10)
+           {
+            alert("Number Should be of 10 digits");
+            return false;
+           }
+
+           else if(isNaN(c))
+           {
+            alert("Only Numbers are allowed");
+            return false;
+           }
+
+           else
+           {
+            alert("Data Entered Successfully");
+             true;
+           }
+        }
+    </script>
+
+
+</body>
+</html>
